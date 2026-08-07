@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nosso Casamento</title>
+
+    <meta
+        name="description"
+        content="Convite de casamento de [Nome] e [Nome]."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         ABERTURA / CAPA
+    ====================================================== -->
+
+    <main class="invitation">
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    Com muita alegria, convidamos você para
+                </p>
+
+                <h1 class="couple-names">
+                    <span>Nome</span>
+                    <small>&amp;</small>
+                    <span>Nome</span>
+                </h1>
+
+                <div class="ornament">
+                    <span></span>
+                    <i>✦</i>
+                    <span></span>
+                </div>
+
+                <p class="hero-date">
+                    24 . 10 . 2026
+                </p>
+
+                <p class="hero-location">
+                    São Paulo · SP
+                </p>
+
+                <a href="#convite" class="scroll-button">
+                    <span>Descubra o nosso convite</span>
+                    <strong>↓</strong>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             MENSAGEM INICIAL
+        ====================================================== -->
+
+        <section class="section intro" id="convite">
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    O nosso grande dia
+                </p>
+
+                <h2>
+                    Um novo capítulo<br>
+                    começa aqui.
+                </h2>
+
+                <div class="divider">
+                    <span></span>
+                    <i>♥</i>
+                    <span></span>
+                </div>
+
+                <p class="intro-text">
+                    Depois de tantos momentos compartilhados,
+                    chegou a hora de celebrar o nosso amor ao lado
+                    das pessoas que fazem parte da nossa história.
+                </p>
+
+                <p class="intro-text">
+                    Será uma alegria imensa ter você conosco
+                    neste dia tão especial.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             DATA
+        ====================================================== -->
+
+        <section class="date-section">
+
+            <div class="date-content">
+
+                <p class="section-label">
+                    Reserve esta data
+                </p>
+
+                <div class="date-display">
+
+                    <div class="date-side">
+                        <span>Sábado</span>
+                    </div>
+
+                    <div class="date-number">
+                        <strong>24</strong>
+                        <span>OUTUBRO</span>
+                    </div>
+
+                    <div class="date-side">
+                        <span>2026</span>
+                    </div>
+
+                </div>
+
+                <p class="date-time">
+                    às 16h00
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             NOSSA HISTÓRIA
+        ====================================================== -->
+
+        <section class="section story">
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    Nossa história
+                </p>
+
+                <h2>
+                    Onde tudo começou
+                </h2>
+
+                <div class="story-grid">
+
+                    <div class="story-image">
+                        <div class="image-placeholder">
+                            <span>Foto do casal</span>
+                        </div>
+                    </div>
+
+                    <div class="story-text">
+
+                        <p>
+                            Algumas histórias começam sem que a gente
+                            perceba. Um encontro, uma conversa, um
+                            sorriso... e, de repente, encontramos
+                            alguém que transforma tudo.
+                        </p>
+
+                        <p>
+                            A nossa história foi construída em pequenos
+                            momentos que se tornaram grandes memórias.
+                            E agora queremos escrever juntos o próximo
+                            capítulo.
+                        </p>
+
+                        <p class="signature">
+                            Com amor,<br>
+                            <strong>Nome &amp; Nome</strong>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             LOCAL DA CERIMÔNIA
+        ====================================================== -->
+
+        <section class="section location">
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    O grande dia
+                </p>
+
+                <h2>
+                    Cerimônia
+                </h2>
+
+                <div class="location-card">
+
+                    <div class="location-icon">
+                        ♡
+                    </div>
+
+                    <h3>
+                        Espaço Jardim das Flores
+                    </h3>
+
+                    <p>
+                        Rua das Flores, 123<br>
+                        São Paulo — SP
+                    </p>
+
+                    <p class="location-time">
+                        16h00
+                    </p>
+
+                    <a
+                        href="#"
+                        class="button"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Ver localização
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RECEPÇÃO
+        ====================================================== -->
+
+        <section class="section reception">
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    Depois do sim...
+                </p>
+
+                <h2>
+                    Vamos celebrar!
+                </h2>
+
+                <div class="reception-details">
+
+                    <div class="detail">
+                        <span class="detail-icon">✦</span>
+                        <h3>Recepção</h3>
+                        <p>
+                            A partir das 18h30
+                        </p>
+                    </div>
+
+                    <div class="detail">
+                        <span class="detail-icon">♡</span>
+                        <h3>Jantar</h3>
+                        <p>
+                            Um jantar preparado com carinho
+                            para todos os nossos convidados.
+                        </p>
+                    </div>
+
+                    <div class="detail">
+                        <span class="detail-icon">♫</span>
+                        <h3>Festa</h3>
+                        <p>
+                            Música, dança e muitos motivos
+                            para brindar juntos.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTAGEM REGRESSIVA
+        ====================================================== -->
+
+        <section class="countdown-section">
+
+            <div class="countdown-content">
+
+                <p class="section-label">
+                    Está chegando...
+                </p>
+
+                <h2>
+                    Contagem regressiva
+                </h2>
+
+                <div class="countdown">
+
+                    <div class="countdown-item">
+                        <strong id="days">00</strong>
+                        <span>dias</span>
+                    </div>
+
+                    <div class="countdown-separator">
+                        :
+                    </div>
+
+                    <div class="countdown-item">
+                        <strong id="hours">00</strong>
+                        <span>horas</span>
+                    </div>
+
+                    <div class="countdown-separator">
+                        :
+                    </div>
+
+                    <div class="countdown-item">
+                        <strong id="minutes">00</strong>
+                        <span>minutos</span>
+                    </div>
+
+                    <div class="countdown-separator">
+                        :
+                    </div>
+
+                    <div class="countdown-item">
+                        <strong id="seconds">00</strong>
+                        <span>segundos</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             DRESS CODE
+        ====================================================== -->
+
+        <section class="section dress-code">
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    Para o nosso dia
+                </p>
+
+                <h2>
+                    Dress code
+                </h2>
+
+                <div class="dress-content">
+
+                    <div class="dress-icon">
+                        ✦
+                    </div>
+
+                    <p>
+                        Queremos que você se sinta confortável
+                        e elegante para celebrar conosco.
+                    </p>
+
+                    <strong>
+                        Esporte fino
+                    </strong>
+
+                    <small>
+                        Evite a cor branca, reservada à noiva.
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PRESENTES
+        ====================================================== -->
+
+        <section class="section gifts">
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    Um carinho para nós
+                </p>
+
+                <h2>
+                    Lista de presentes
+                </h2>
+
+                <p class="section-description">
+                    A sua presença é o nosso maior presente.
+                    Mas, caso queira nos presentear, deixamos
+                    algumas opções com muito carinho.
+                </p>
+
+                <a href="#" class="button">
+                    Acessar lista de presentes
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONFIRMAÇÃO DE PRESENÇA
+        ====================================================== -->
+
+        <section class="section rsvp">
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    Esperamos por você
+                </p>
+
+                <h2>
+                    Confirme sua presença
+                </h2>
+
+                <p class="section-description">
+                    Para organizarmos tudo com muito carinho,
+                    pedimos que confirme sua presença até
+                    <strong>30 de setembro de 2026.</strong>
+                </p>
+
+                <form class="rsvp-form" id="rsvpForm">
+
+                    <div class="form-group">
+
+                        <label for="guestName">
+                            Seu nome
+                        </label>
+
+                        <input
+                            type="text"
+                            id="guestName"
+                            name="guestName"
+                            placeholder="Digite seu nome"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>
+                            Você poderá estar conosco?
+                        </label>
+
+                        <div class="radio-group">
+
+                            <label class="radio-option">
+                                <input
+                                    type="radio"
+                                    name="attendance"
+                                    value="sim"
+                                    required
+                                >
+                                <span>Sim, estarei presente!</span>
+                            </label>
+
+                            <label class="radio-option">
+                                <input
+                                    type="radio"
+                                    name="attendance"
+                                    value="nao"
+                                >
+                                <span>Infelizmente não poderei.</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="button button-submit">
+                        Confirmar presença
+                    </button>
+
+                    <p
+                        class="form-message"
+                        id="formMessage"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FRASE FINAL
+        ====================================================== -->
+
+        <section class="final-section">
+
+            <div class="final-overlay"></div>
+
+            <div class="final-content">
+
+                <div class="final-ornament">
+                    ✦
+                </div>
+
+                <p>
+                    "O amor não é apenas olhar um para o outro,
+                    é olhar juntos na mesma direção."
+                </p>
+
+                <h2>
+                    Nome &amp; Nome
+                </h2>
+
+                <span>
+                    24.10.2026
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RODAPÉ
+        ====================================================== -->
+
+        <footer class="footer">
+
+            <p>
+                Feito com amor para celebrar um amor.
+            </p>
+
+            <span>
+                ♥
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
