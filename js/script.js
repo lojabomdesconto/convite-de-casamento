@@ -122,62 +122,72 @@ animatedElements.forEach((element) => {
 
 
 /* =========================================================
-   CONFIRMAÇÃO DE PRESENÇA
+   CONFIRMAÇÃO DE PRESENÇA PELO WHATSAPP
 ========================================================= */
 
-const rsvpForm =
-    document.getElementById("rsvpForm");
+const rsvpForm = document.getElementById("rsvpForm");
 
-const formMessage =
-    document.getElementById("formMessage");
+rsvpForm.addEventListener("submit", function (event) {
 
+    event.preventDefault();
 
-rsvpForm.addEventListener(
-    "submit",
-    function (event) {
+    const guestName = document
+        .getElementById("guestName")
+        .value
+        .trim();
 
-        event.preventDefault();
+    const attendance = document.querySelector(
+        'input[name="attendance"]:checked'
+    );
 
-
-        const guestName =
-            document
-                .getElementById("guestName")
-                .value
-                .trim();
-
-
-        const attendance =
-            document.querySelector(
-                'input[name="attendance"]:checked'
-            );
-
-
-        if (!guestName || !attendance) {
-
-            formMessage.textContent =
-                "Por favor, preencha todos os campos.";
-
-            return;
-        }
-
-
-        if (attendance.value === "sim") {
-
-            formMessage.textContent =
-                `Que alegria, ${guestName}! ❤️ Sua presença foi confirmada.`;
-
-        } else {
-
-            formMessage.textContent =
-                `Obrigado por nos avisar, ${guestName}. Sentiremos sua falta! ❤️`;
-        }
-
-
-        // Limpa o formulário depois do envio
-        rsvpForm.reset();
-
+    if (!guestName || !attendance) {
+        alert("Por favor, preencha seu nome e escolha uma opção.");
+        return;
     }
-);
+
+    const status =
+        attendance.value === "sim"
+            ? "Sim, estarei presente! ❤️"
+            : "Infelizmente não poderei comparecer.";
+
+    /*
+     * COLOQUE AQUI O SEU NÚMERO
+     *
+     * Formato:
+     * código do país + DDD + número
+     *
+     * Brasil = 55
+     *
+     * Exemplo:
+     * 5511999999999
+     */
+
+    const numeroWhatsApp = "5511999999999";
+
+
+    const mensagem = `
+💍 *CONFIRMAÇÃO DE PRESENÇA*
+
+Olá! Recebi uma confirmação pelo convite de casamento.
+
+👤 *Nome:* ${guestName}
+
+💌 *Presença:* ${status}
+
+📅 *Casamento:* 24/10/2026
+
+Obrigado! ❤️
+    `.trim();
+
+
+    const url =
+        `https://wa.me/${numeroWhatsApp}?text=` +
+        encodeURIComponent(mensagem);
+
+
+    window.open(url, "_blank");
+
+});
 
 
 /* =========================================================
