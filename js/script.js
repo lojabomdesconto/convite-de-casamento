@@ -338,22 +338,23 @@ window.addEventListener(
     }
 );
 
-/*===========================================================
-    Musica
-==========================================================*/
+/*===========================================================*
+* Música
+*===========================================================*/
+
 const musica = document.getElementById("musica");
-let musicaIniciada = false;
 
 function iniciarMusica() {
-    if (musicaIniciada) return;
 
     musica.play()
         .then(() => {
-            musicaIniciada = true;
+            console.log("Música iniciada!");
         })
-        .catch(() => {});
+        .catch((erro) => {
+            console.log("Não foi possível iniciar a música:", erro);
+        });
 }
 
-window.addEventListener("scroll", iniciarMusica, { once: true });
 window.addEventListener("touchstart", iniciarMusica, { once: true });
 window.addEventListener("pointerdown", iniciarMusica, { once: true });
+window.addEventListener("scroll", iniciarMusica, { once: true });
