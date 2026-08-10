@@ -342,19 +342,8 @@ window.addEventListener(
 * Música
 *===========================================================*/
 
+console.log(musica);
+const musica = document.getElementById("musica");
 const musica = document.getElementById("musica");
 
-function iniciarMusica() {
-
-    musica.play()
-        .then(() => {
-            console.log("Música iniciada!");
-        })
-        .catch((erro) => {
-            console.log("Não foi possível iniciar a música:", erro);
-        });
-}
-
-window.addEventListener("touchstart", iniciarMusica, { once: true });
-window.addEventListener("pointerdown", iniciarMusica, { once: true });
-window.addEventListener("scroll", iniciarMusica, { once: true });
+console.log(musica);
