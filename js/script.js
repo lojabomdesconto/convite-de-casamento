@@ -162,7 +162,7 @@ rsvpForm.addEventListener("submit", function (event) {
      * 5511999999999
      */
 
-    const numeroWhatsApp = "5511999999999";
+    const numeroWhatsApp = "5511973968625";
 
 
     const mensagem = `
