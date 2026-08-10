@@ -350,14 +350,16 @@ const audio = document.getElementById("bg-music");
 
   function startMusic() {
     if (!started) {
-      audio.play();
+      audio.play().catch(err => {
+        console.log("Autoplay bloqueado:", err);
+      });
       started = true;
     }
   }
 
-  // dispara quando o usuário rolar a página
+  // eventos comuns em celular
   window.addEventListener("scroll", startMusic);
-
-  // dispara também se clicar em qualquer parte
+  window.addEventListener("touchstart", startMusic);
+  window.addEventListener("touchmove", startMusic);
   document.addEventListener("click", startMusic);
 
