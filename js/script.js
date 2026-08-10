@@ -340,9 +340,24 @@ window.addEventListener(
 
 /* =========================================================
    MUSICA
-========================================================= */
-
-document.addEventListener("click", function() {
+   document.addEventListener("click", function() {
     const audio = document.getElementById("bg-music");
     audio.play();
   });
+========================================================= */
+const audio = document.getElementById("bg-music");
+  let started = false;
+
+  function startMusic() {
+    if (!started) {
+      audio.play();
+      started = true;
+    }
+  }
+
+  // dispara quando o usuário rolar a página
+  window.addEventListener("scroll", startMusic);
+
+  // dispara também se clicar em qualquer parte
+  document.addEventListener("click", startMusic);
+
