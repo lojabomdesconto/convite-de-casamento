@@ -337,11 +337,3 @@ window.addEventListener(
 
     }
 );
-
-/*===========================================================*
-*Música*
-*===========================================================*/
-
-const musica = document.getElementById("musica");
-
-console.log("Elemento de áudio:", musica);
