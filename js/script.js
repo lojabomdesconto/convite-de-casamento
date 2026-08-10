@@ -337,3 +337,23 @@ window.addEventListener(
 
     }
 );
+
+/*===========================================================
+    Musica
+==========================================================*/
+const musica = document.getElementById("musica");
+let musicaIniciada = false;
+
+function iniciarMusica() {
+    if (musicaIniciada) return;
+
+    musica.play()
+        .then(() => {
+            musicaIniciada = true;
+        })
+        .catch(() => {});
+}
+
+window.addEventListener("scroll", iniciarMusica, { once: true });
+window.addEventListener("touchstart", iniciarMusica, { once: true });
+window.addEventListener("pointerdown", iniciarMusica, { once: true });
