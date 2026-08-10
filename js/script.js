@@ -338,12 +338,10 @@ window.addEventListener(
     }
 );
 
-/*===========================================================
- Música
-===========================================================*/
+/*===========================================================*
+*Música*
+*===========================================================*/
 
-console.log(musica);
-const musica = document.getElementById("musica");
 const musica = document.getElementById("musica");
 
-console.log(musica);
+console.log("Elemento de áudio:", musica);
