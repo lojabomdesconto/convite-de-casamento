@@ -340,26 +340,8 @@ window.addEventListener(
 
 /* =========================================================
    MUSICA
-   document.addEventListener("click", function() {
+========================================================= */
+document.addEventListener("click", function() {
     const audio = document.getElementById("bg-music");
     audio.play();
   });
-========================================================= */
-const audio = document.getElementById("bg-music");
-  let started = false;
-
-  function startMusic() {
-    if (!started) {
-      audio.play().catch(err => {
-        console.log("Autoplay bloqueado:", err);
-      });
-      started = true;
-    }
-  }
-
-  // eventos comuns em celular
-  window.addEventListener("scroll", startMusic);
-  window.addEventListener("touchstart", startMusic);
-  window.addEventListener("touchmove", startMusic);
-  document.addEventListener("click", startMusic);
-
