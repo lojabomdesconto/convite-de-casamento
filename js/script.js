@@ -337,3 +337,12 @@ window.addEventListener(
 
     }
 );
+
+/* =========================================================
+   MUSICA
+========================================================= */
+
+document.addEventListener("click", function() {
+    const audio = document.getElementById("bg-music");
+    audio.play();
+  });
